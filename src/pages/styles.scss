@@ -1,0 +1,92 @@
+$black: #000;
+$white: #fff;
+
+$font: -apple-system, BlinkMacSystemFont, 'Questrial', sans-serif, "Apple Color Emoji";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;  
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, button {
+  font-family: $font;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  background-color: $black;
+  min-height: 100vh;
+  padding: 0px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 326px;
+  color: $white;
+
+  header {
+    padding-bottom: 15px;
+
+    h1 {
+      font-family: $font;
+      font-size: 3rem;
+      font-weight: 700;
+      line-height: 1.25;
+      letter-spacing: 1px;
+      position: relative;
+      display: inline-block;
+  
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        width: 105%;
+        height: 0.08em;
+        bottom: 0em;
+        z-index: 1;
+        transform: rotate(-2deg);
+        animation: 0.5s cubic-bezier(0.26, 0.29, 0.14, 1.13) 1s 1 normal forwards running cztpiG;
+        border-radius: 2px;
+        background: rgb(255, 51, 102);
+      }
+    }
+  }
+}
+
+.profile {
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  .link {
+    text-decoration: underline;
+    color: $white;
+  }
+
+  p {
+    padding-bottom: 8px;
+  }
+}
+
+.communication {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 290px;
+
+  .link {
+    text-decoration: none;
+  }
+}
