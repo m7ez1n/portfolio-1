@@ -1,5 +1,6 @@
 $black: #000;
 $white: #fff;
+$pink: #ff3366;
 
 $font: -apple-system, BlinkMacSystemFont, 'Questrial', sans-serif, "Apple Color Emoji";
 
@@ -33,8 +34,29 @@ button {
 }
 
 .content {
-  width: 326px;
+  width: 320px;
   color: $white;
+
+  .formLink {
+    width: 287px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid $white;
+    border-radius: 5px;
+    margin-top: 15px;
+    
+    text-decoration: none;
+    color: $white;
+    font-family: $font;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: 1px;
+  }
 }
 
 .profile {
@@ -71,6 +93,49 @@ button {
   flex-direction: column;
 }
 
+.form {
+  background-color: $black;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  form {
+    padding: 30px 25px;
+    border-radius: 5px;
+    max-width: 500px;
+    width: 100%;
+
+    .input-block {
+      margin-bottom: 20px;
+
+      label {
+        font-family: $font;
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        color: $white;
+      }
+
+      input, textarea {
+        width: 100%;
+        display: block;
+        margin-top: 8px;
+        padding: 7px;
+        font-size: 16px;
+        color: $pink;
+        border-radius: 2px;
+        border: 1px solid #fff;
+        outline-color: $pink;
+        resize: none;
+      }
+
+    }
+  }
+}
+
 header {
   padding-bottom: 20px;
 
@@ -96,7 +161,7 @@ header {
       transform: rotate(-2deg);
       animation: 0.5s cubic-bezier(0.26, 0.29, 0.14, 1.13) 1s 1 normal forwards running cztpiG;
       border-radius: 2px;
-      background: rgb(255, 51, 102);
+      background: $pink;
     }
   }
 }

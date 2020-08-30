@@ -45,10 +45,13 @@ export default function Home() {
                 </a>
               ))}
             </div>
+
+            <a href="#form" className="formLink">Entre em contato</a>
           </div>
         </section>
       </section>
-      <section className="skills" id="skill-set">
+      
+			<section className="skills" id="skill-set">
         <header>
           <h1>Skill Set</h1>          
         </header>
@@ -56,6 +59,26 @@ export default function Home() {
           <Skill name={value.name} percent={value.percent} key={`key-skill-${idx}`} />
         ))}
       </section>
+
+      <section className="form" id="form">
+					<header>
+						<h1>Contato</h1>
+					</header>
+					<form>
+						<div className="input-block">
+							<label for="form-name">Nome</label>
+							<input />
+						</div>
+						<div className="input-block">
+							<label for="form-email">Email</label>
+							<input type="email" />
+						</div>
+						<div className="input-block">
+							<label for="form-message">Mensagem</label>
+							<textarea rows={5} cols={15} />
+						</div>
+					</form>
+			</section>
     </>
   );
 }

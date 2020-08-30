@@ -1,26 +1,34 @@
 export const skills = [
   {
     name: 'HTML',
-    percent: 60,
+    percent: 65,
   },
   {
     name: 'CSS',
-    percent: 60,
+    percent: 35,
   },
   {
     name: 'React',
-    percent: 60,
+    percent: 55,
   },
   {
     name: 'ReasonML',
-    percent: 60,
+    percent: 5,
   },
   {
-    name: 'C#',
-    percent: 60,
+    name: 'NodeJS',
+    percent: '30'
+  },
+  {
+    name: 'MongoDB',
+    percent: 10,
+  },
+  {
+    name: 'GraphQL',
+    percent: 15,
   },
   {
     name: 'Git',
-    percent: 60,
+    percent: 70,
   },
 ];
